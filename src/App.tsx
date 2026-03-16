@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import CalculatorPage from "./pages/CalculatorPage";
 import TicTacToePage from "./pages/TicTacToePage";
 import TodoListPage from "./pages/TodoListPage";
+import MovieAppPage from "./pages/MovieAppPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/calculator" element={<CalculatorPage />} />
           <Route path="/tictactoe" element={<TicTacToePage />} />
           <Route path="/todolist" element={<TodoListPage />} />
+          <Route path="/streaming" element={<MovieAppPage />} />
         </Routes>
       </BrowserRouter>
     </>

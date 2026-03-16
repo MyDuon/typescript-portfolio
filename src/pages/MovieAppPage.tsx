@@ -4,9 +4,11 @@ import { useState, useEffect } from "react";
 import ProjectDescription from "../components/ProjectDescription/ProjectDescription";
 
 function MovieAppPage() {
-  const [movieList, setMovieList] = useState([]);
+  const [movieList, setMovieList] = useState<
+    Array<{ id: number; poster_path: string }>
+  >([]);
 
-  const handleOnclick = (title) => {
+  const handleOnclick = (title: number) => {
     console.log(title);
     // window.open("/");
   };
