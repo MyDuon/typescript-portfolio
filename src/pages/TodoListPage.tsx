@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./TodoListPage.css";
 import ProjectDescription from "../components/ProjectDescription/ProjectDescription";
 
-const getLocalItem = () => {
+const getLocalItem = (): string[] => {
   const list: string | null = localStorage.getItem("todoList");
   if (list) {
     return JSON.parse(list);
@@ -20,21 +20,21 @@ function TodoListPage() {
     localStorage.setItem("todoList", JSON.stringify(todoList));
   }, [todoList]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    e.target.reset();
+    e.currentTarget.reset();
     AddTask();
   };
 
   function AddTask() {
     if (task.trim() !== "") {
-      setTodolist((t) => [...t, task]);
+      setTodolist((t: string[]) => [...t, task]);
       setTask("");
     }
   }
 
   function RemoveTask(index: number) {
-    const updatedTasks = todoList.filter((_, i) => i !== index);
+    const updatedTasks = todoList.filter((_: string, i: number) => i !== index);
     setTodolist(updatedTasks);
   }
   return (
@@ -63,7 +63,7 @@ function TodoListPage() {
       </form>
       <div className="todo-task">
         <ul>
-          {todoList.map((task, index) => (
+          {todoList.map((task: string, index: number) => (
             <li className="task-container" key={index}>
               <h3 className="task-description">{task}</h3>
               <button
