@@ -4,7 +4,7 @@ import "./TodoListPage.css";
 import ProjectDescription from "../components/ProjectDescription/ProjectDescription";
 
 const getLocalItem = () => {
-  let list = localStorage.getItem("todoList");
+  const list: string | null = localStorage.getItem("todoList");
   if (list) {
     return JSON.parse(list);
   } else {
@@ -33,7 +33,7 @@ function TodoListPage() {
     }
   }
 
-  function RemoveTask(index) {
+  function RemoveTask(index: number) {
     const updatedTasks = todoList.filter((_, i) => i !== index);
     setTodolist(updatedTasks);
   }
