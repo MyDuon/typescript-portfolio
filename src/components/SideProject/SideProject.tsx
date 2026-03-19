@@ -9,7 +9,7 @@ function SideProject() {
   return (
     <>
       <div className="side-project-container">
-        <h1 className="project-header">Project</h1>
+        <h1 className="project-header">My Work</h1>
         <div className="grid-container">
           <div className="image-container">
             <Link className="link" to="/streaming">

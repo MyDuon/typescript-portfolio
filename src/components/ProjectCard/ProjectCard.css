@@ -1,0 +1,9 @@
+.project-image {
+  width: 30rem;
+}
+.project-card-containter {
+  border: 1px solid red;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
