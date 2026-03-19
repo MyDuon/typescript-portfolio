@@ -16,7 +16,7 @@ function Hero() {
             jobber med teknologier som f.eks.{" "}
             <span className="hero-name">React</span>,{" "}
             <span className="hero-name">TypeScript</span>,{" "}
-            <span className="hero-name">Node.js</span>,
+            <span className="hero-name">Node.js</span>, {""}
             <span className="hero-name">MongoDB</span>. På denne siden finner du
             et utvalg av prosjektene mine, og litt mer om meg selv.
           </h2>
