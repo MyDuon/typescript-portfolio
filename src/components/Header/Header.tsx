@@ -7,7 +7,7 @@ function Header() {
     <>
       <header className="header-container">
         <Link className="home-button" to="/">
-          <p>Lille My</p>
+          <p>My Hoang Duong</p>
         </Link>
         <nav className="nav">
           <a href="/">About</a>
@@ -15,8 +15,7 @@ function Header() {
           <a href={resume} target="_blank">
             Resume
           </a>
-          {/* <a href="/">Experience</a>
-          <a href="/">Contact</a> */}
+          <a href="/">Education</a>
         </nav>
       </header>
     </>

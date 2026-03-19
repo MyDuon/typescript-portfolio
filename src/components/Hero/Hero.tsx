@@ -6,20 +6,20 @@ function Hero() {
     <>
       <div className="hero-container">
         <div className="left-hero">
-          <h1 className="hero-intro">Hei, Jeg er My</h1>
-          <h3 className="hero-description">
-            Masterstudent som er på leting etter en utvikler jobb, enten
-            fullstack, frontend eller backend. Er på utskikk etter fulltids-,
-            deltids- eller sommerjobb.
-          </h3>
-          <p>
-            Jeg studerer master i informatikk og jeg syntes koding og design er
-            veldig gøy og spennende. Jeg er interessert i programvare-,
-            mobilutvikling- eller systemutvikling. Jeg liker å jobbe som en
-            fullstack utvikler og min nåværende tech-stack min er MongoDB,
-            Express.js, React.js og Node.js. Jeg holder for tiden med å lære meg
-            Typescript nå. Sjekk gjerne prosjektene som mine under.
-          </p>
+          <h1 className="hero-intro">
+            Hei, Jeg er <span className="hero-name">My</span> – Fullstack
+            utvikler og masterstudent innen IT
+          </h1>
+          <h2 className="hero-description">
+            Jeg bygger fullstack-løsninger med fokus på både god kodekvalitet og
+            responsiv design. Til daglig studerer jeg informatikk på UIO, og
+            jobber med teknologier som f.eks.{" "}
+            <span className="hero-name">React</span>,{" "}
+            <span className="hero-name">TypeScript</span>,{" "}
+            <span className="hero-name">Node.js</span>,
+            <span className="hero-name">MongoDB</span>. På denne siden finner du
+            et utvalg av prosjektene mine, og litt mer om meg selv.
+          </h2>
         </div>
         <div className="right-hero">
           <img className="hero-picture" src={picture} alt="picture of me" />
