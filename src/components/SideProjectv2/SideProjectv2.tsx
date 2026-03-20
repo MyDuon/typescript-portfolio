@@ -1,23 +1,17 @@
 import "./SideProjectv2.css";
 import todo from "../../resources/todo-list.png";
-import ProjectCard from "../ProjectCard/ProjectCard";
 
 function SideProjectv2() {
   return (
     <>
       <div className="side-project-container">
         <h1 className="side-project-header">My Work</h1>
-        <div className="sideproject-grid">
-          <ProjectCard
-            title="Todo List"
-            description="A simple todo list app built with React and TypeScript."
-            image={todo}
-          />
-          <ProjectCard
-            title="Todo List"
-            description="A simple todo list app built with React and TypeScript."
-            image={todo}
-          />
+        <div className="project-container">
+          <img src={todo} alt="Todo List App" />
+          <div>
+            <h2>Project Title</h2>
+            <h3>Desctiption</h3>
+          </div>
         </div>
       </div>
     </>

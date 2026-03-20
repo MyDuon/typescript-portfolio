@@ -1,20 +1,6 @@
-.sideproject-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-}
-
-.sideproject-grid > .project-card-container {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: min(15.625rem, 100%); /* 250px -> 15.625rem */
-  max-width: 20rem; /* 320px -> 20rem */
-}
-
 .side-project-header {
   text-align: center;
+  padding-top: 2rem;
 }
 
 .side-project-container {
