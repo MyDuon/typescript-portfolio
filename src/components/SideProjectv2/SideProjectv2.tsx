@@ -3,8 +3,9 @@ import calculator from "../../resources/calculator.png";
 import movieapp from "../../resources/movie-app.png";
 import thinkboard from "../../resources/thinkboard.png";
 import tictactoe from "../../resources/tic-tac-toe.png";
-import todo from "../../resources/todo-list.png";
+// import todo from "../../resources/todo-list.png";
 import ProjectCard from "./ProjectCard";
+import todo_gif from "../../resources/todo_list.gif";
 
 function SideProjectv2() {
   return (
@@ -12,7 +13,7 @@ function SideProjectv2() {
       <div className="side-project-container">
         <h1 className="side-project-header">My Work</h1>
         <ProjectCard
-          imageSrc={todo}
+          imageSrc={todo_gif}
           alt="Todo List App"
           title="Todo List"
           description="Front-end todo list built with React in TypeScript. Uses local storage to save the user's tasks and allows them to add and delete tasks. The app is responsive and has a clean, minimalist design."
