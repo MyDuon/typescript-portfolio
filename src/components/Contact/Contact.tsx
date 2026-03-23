@@ -1,7 +1,7 @@
 import "./Contact.css";
-import linkedin from "../../resources/linkedin.png";
-import github from "../../resources/github-mark.png";
-import email from "../../resources/email-icon.png";
+import linkedin from "../../assets/linkedin.png";
+import github from "../../assets/github-mark.png";
+import email from "../../assets/email-icon.png";
 
 function Contact() {
   return (

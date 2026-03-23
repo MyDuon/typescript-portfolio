@@ -1,10 +1,10 @@
 import "./SideProjectv2.css";
-import calculator_gif from "../../resources/calculator.gif";
-import tictactoe_gif from "../../resources/tictactoe.gif";
+import calculator_gif from "../../assets/calculator.gif";
+import tictactoe_gif from "../../assets/tictactoe.gif";
 import ProjectCard from "./ProjectCard";
-import todo_gif from "../../resources/todo_list.gif";
-import thinkboard_gif from "../../resources/thinkboard.gif";
-import movieapp_gif from "../../resources/movieapp.gif";
+import todo_gif from "../../assets/todo_list.gif";
+import thinkboard_gif from "../../assets/thinkboard.gif";
+import movieapp_gif from "../../assets/movieapp.gif";
 
 function SideProjectv2() {
   return (
