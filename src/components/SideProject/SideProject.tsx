@@ -1,73 +1,56 @@
 import "./SideProject.css";
-import { Link } from "react-router";
-import streaming from "../../resources/movie-app.png";
-import calculator from "../../resources/calculator.png";
-import todo from "../../resources/todo-list.png";
-import tictactoe from "../../resources/tic-tac-toe.png";
-import thinkboard from "../../resources/thinkboard.png";
+import calculator_gif from "../../assets/calculator.gif";
+import tictactoe_gif from "../../assets/tictactoe.gif";
+import ProjectCard from "./ProjectCard";
+import todo_gif from "../../assets/todo_list.gif";
+import thinkboard_gif from "../../assets/thinkboard.gif";
+import movieapp_gif from "../../assets/movieapp.gif";
+
 function SideProject() {
   return (
     <>
       <div className="side-project-container">
-        <h1 className="project-header">My Work</h1>
-        <div className="grid-container">
-          <div className="image-container">
-            <Link className="link" to="/streaming">
-              <div className="hidden-header">
-                <h2>Movie App</h2>
-              </div>
-              <img className="image" src={streaming} alt="streaming picture" />
-              {/* <div className="hei">hei</div> */}
-            </Link>
-          </div>
-          <div className="image-container">
-            <Link className="link" to="/calculator">
-              <div className="hidden-header">
-                <h2>Calculator</h2>
-              </div>
-              <img
-                className="image"
-                src={calculator}
-                alt="calculator picture"
-              />
-            </Link>
-          </div>
-          <div className="image-container">
-            <Link className="link" to="todolist">
-              <div className="hidden-header">
-                <h2>Todo list</h2>
-              </div>
-              <img className="image" src={todo} alt="todo-list picture" />
-            </Link>
-          </div>
-          <div className="image-container">
-            <Link className="link" to="tictactoe">
-              <div className="hidden-header">
-                <h2>Tic Tac Toe</h2>
-              </div>
-              <img
-                className="image"
-                src={tictactoe}
-                alt="tic-tac-toe picture"
-              />
-            </Link>
-          </div>
-          <div className="image-container">
-            <a
-              className="link"
-              href="https://mern-thinkboard-l60u.onrender.com/"
-            >
-              <div className="hidden-header">
-                <h2>Thinkboard</h2>
-              </div>
-              <img
-                className="image"
-                src={thinkboard}
-                alt="thinkboard picture"
-              />
-            </a>
-          </div>
-        </div>
+        <h1 className="side-project-header">My Work</h1>
+        <ProjectCard
+          imageSrc={todo_gif}
+          alt="Todo List App"
+          title="Todo List"
+          description="Front-end todo list built with React in TypeScript. Uses local storage to save the user's tasks and allows them to add and delete tasks. The app is responsive and has a clean, minimalist design."
+          link="/todolist"
+          github="https://github.com/example/todo"
+        />
+        <ProjectCard
+          imageSrc={calculator_gif}
+          alt="Calculator App"
+          title="Calculator"
+          description="A simple calculator app built with React in TypeScript. Allows users to perform basic arithmetic operations."
+          link="/calculator"
+          github="https://github.com/example/calculator"
+        />
+        <ProjectCard
+          imageSrc={movieapp_gif}
+          alt="Movie App"
+          title="Movie App"
+          description="A movie browsing app built with React in TypeScript. Allows users to search for movies and view details."
+          link="/streaming"
+          github="https://github.com/example/streaming"
+        />
+        <ProjectCard
+          imageSrc={thinkboard_gif}
+          alt="Think Board App"
+          title="Think Board"
+          description="A collaborative brainstorming app built with React in TypeScript. Allows users to create and share ideas in a visual board format."
+          link="https://mern-thinkboard-l60u.onrender.com/"
+          github="https://github.com/example/thinkboard"
+        />
+        <ProjectCard
+          imageSrc={tictactoe_gif}
+          alt="Tic Tac Toe App"
+          title="Tic Tac Toe"
+          description="A classic Tic Tac Toe game built with React in TypeScript. Features a clean, modern design and responsive layout."
+          link="/tictactoe"
+          github="https://github.com/example/tictactoe"
+        />
       </div>
     </>
   );

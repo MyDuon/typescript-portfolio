@@ -2,22 +2,22 @@ import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Contact from "../components/Contact/Contact";
 import Experience from "../components/Experience/Experience";
-// import SideProject from "../components/SideProject/SideProject";
 import Footer from "../components/Footer/Footer";
 import "../index.css";
-import SideProjectv2 from "../components/SideProjectv2/SideProjectv2";
+import SideProject from "../components/SideProject/SideProject";
+import "./HomePage.css";
 
 function HomePage() {
   return (
-    <>
+    <div className="home-page-container">
       <Header />
       <Hero />
       {/* <SideProject /> */}
-      <SideProjectv2 />
+      <SideProject />
       <Experience />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 export default HomePage;
