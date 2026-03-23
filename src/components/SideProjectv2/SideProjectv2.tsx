@@ -1,11 +1,10 @@
 import "./SideProjectv2.css";
-import calculator from "../../resources/calculator.png";
-import movieapp from "../../resources/movie-app.png";
-import thinkboard from "../../resources/thinkboard.png";
-import tictactoe from "../../resources/tic-tac-toe.png";
-// import todo from "../../resources/todo-list.png";
+import calculator_gif from "../../resources/calculator.gif";
+import tictactoe_gif from "../../resources/tictactoe.gif";
 import ProjectCard from "./ProjectCard";
 import todo_gif from "../../resources/todo_list.gif";
+import thinkboard_gif from "../../resources/thinkboard.gif";
+import movieapp_gif from "../../resources/movieapp.gif";
 
 function SideProjectv2() {
   return (
@@ -21,7 +20,7 @@ function SideProjectv2() {
           github="https://github.com/example/todo"
         />
         <ProjectCard
-          imageSrc={calculator}
+          imageSrc={calculator_gif}
           alt="Calculator App"
           title="Calculator"
           description="A simple calculator app built with React in TypeScript. Allows users to perform basic arithmetic operations."
@@ -29,7 +28,7 @@ function SideProjectv2() {
           github="https://github.com/example/calculator"
         />
         <ProjectCard
-          imageSrc={movieapp}
+          imageSrc={movieapp_gif}
           alt="Movie App"
           title="Movie App"
           description="A movie browsing app built with React in TypeScript. Allows users to search for movies and view details."
@@ -37,7 +36,7 @@ function SideProjectv2() {
           github="https://github.com/example/streaming"
         />
         <ProjectCard
-          imageSrc={thinkboard}
+          imageSrc={thinkboard_gif}
           alt="Think Board App"
           title="Think Board"
           description="A collaborative brainstorming app built with React in TypeScript. Allows users to create and share ideas in a visual board format."
@@ -45,7 +44,7 @@ function SideProjectv2() {
           github="https://github.com/example/thinkboard"
         />
         <ProjectCard
-          imageSrc={tictactoe}
+          imageSrc={tictactoe_gif}
           alt="Tic Tac Toe App"
           title="Tic Tac Toe"
           description="A classic Tic Tac Toe game built with React in TypeScript. Features a clean, modern design and responsive layout."
