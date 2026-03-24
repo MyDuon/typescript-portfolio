@@ -5,6 +5,7 @@ import TicTacToePage from "./pages/TicTacToePage";
 import TodoListPage from "./pages/TodoListPage";
 import MovieAppPage from "./pages/MovieAppPage";
 import StopwatchPage from "./pages/StopwatchPage";
+import EducationPage from "./pages/EducationPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/todolist" element={<TodoListPage />} />
           <Route path="/streaming" element={<MovieAppPage />} />
           <Route path="/stopwatch" element={<StopwatchPage />} />
+          <Route path="/education" element={<EducationPage />} />
         </Routes>
       </BrowserRouter>
     </>

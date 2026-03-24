@@ -15,7 +15,9 @@ function Header() {
           <a href={resume} target="_blank">
             Resume
           </a>
-          <a href="/">Education</a>
+          <Link className="education-button" to="/education">
+            <p>Education</p>
+          </Link>
         </nav>
       </header>
     </>
