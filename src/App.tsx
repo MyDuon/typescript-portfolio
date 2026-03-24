@@ -4,6 +4,7 @@ import CalculatorPage from "./pages/CalculatorPage";
 import TicTacToePage from "./pages/TicTacToePage";
 import TodoListPage from "./pages/TodoListPage";
 import MovieAppPage from "./pages/MovieAppPage";
+import StopwatchPage from "./pages/StopwatchPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/tictactoe" element={<TicTacToePage />} />
           <Route path="/todolist" element={<TodoListPage />} />
           <Route path="/streaming" element={<MovieAppPage />} />
+          <Route path="/stopwatch" element={<StopwatchPage />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -11,12 +11,14 @@ function HomePage() {
   return (
     <div className="home-page-container">
       <Header />
-      <Hero />
-      {/* <SideProject /> */}
-      <SideProject />
-      <Experience />
-      <Contact />
-      <Footer />
+      <div className="home-page-content">
+        <Hero />
+        {/* <SideProject /> */}
+        <SideProject />
+        <Experience />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

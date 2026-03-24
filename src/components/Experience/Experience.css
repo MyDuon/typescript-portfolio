@@ -4,8 +4,7 @@
   display: flex;
   justify-content: space-between;
   gap: 3rem;
-  margin-left: 12rem;
-  margin-right: 12rem;
+  margin: 0 8rem;
 }
 .education-container,
 .experience-container {

@@ -17,7 +17,7 @@
   height: 100%;
 }
 
-.test {
+.visual-media {
   /* padding: 0.5rem; */
   width: 100%;
   display: block;
@@ -41,6 +41,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
 }
 .project-links {
   display: flex;

@@ -2,7 +2,7 @@ import "./ProjectCard.css";
 import { Link } from "react-router-dom";
 
 type ProjectCardProps = {
-  imageSrc: string;
+  imageSrc: string; // can now also be video
   alt: string;
   title: string;
   description: string;
@@ -22,10 +22,20 @@ function ProjectCard({
   const isExternalLink: boolean =
     link.startsWith("http://") || link.startsWith("https://");
 
+  // true if imageSrc ends with .mp4 (case-insensitive)
+  const isVideo = /\.mp4$/i.test(imageSrc);
+
   return (
     <div className="project-container">
       <div className="project-image-wrapper">
-        <img className="test" src={imageSrc} alt={alt} />
+        {isVideo ? (
+          <video className="visual-media" controls loop autoPlay>
+            <source src={imageSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img className="visual-media" src={imageSrc} alt={alt} />
+        )}
       </div>
       <div className="project-description">
         <div className="project-info">
