@@ -1,16 +1,9 @@
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: var(--accent);
   padding: 1rem;
-}
-.footer-header {
-  padding-bottom: 1rem;
-}
-.footer-description {
-  padding-bottom: 1rem;
-}
-.footer-margin {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  gap: 1rem;
 }
 
 @media (max-width: 48rem) {
@@ -20,14 +13,8 @@
   }
 }
 
-/* Pasted from contact.css */
-.contact-container {
-  margin-bottom: 3rem;
-}
-
 .contact-header {
   text-align: center;
-  margin-bottom: 3rem;
 }
 .logo-container {
   display: flex;
@@ -39,7 +26,6 @@
 .email-logo {
   height: 4rem;
   width: 4rem;
-  /* background-color: purple; */
 }
 .linkedin,
 .github,
