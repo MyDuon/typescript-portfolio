@@ -24,8 +24,9 @@
   width: 40%;
 }
 .hero-picture {
-  width: 100%;
+  max-width: 100%;
   border-radius: 20%;
+  height: auto;
 }
 
 @media (max-width: 48rem) {

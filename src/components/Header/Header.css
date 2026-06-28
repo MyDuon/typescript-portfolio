@@ -1,6 +1,7 @@
 .header-container {
   display: flex;
   padding: 1rem 5rem;
+  flex-wrap: wrap;
 }
 .nav,
 .home-button {
@@ -24,8 +25,44 @@
   font-size: 1.2rem;
   /* font-weight: 500; */
 }
-/* @media (max-width: 48rem) {
-  .header-container {
-    padding: 1rem 1rem;
+
+.hamburger-button {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger-button span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: var(--primary);
+  border-radius: 0.2rem;
+}
+@media (max-width: 40rem) {
+  .hamburger-button {
+    display: flex;
   }
-} */
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .header-container {
+    flex-direction: column;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .header-container {
+    gap: 1rem;
+  }
+  nav {
+    background-color: var(--primary);
+  }
+}
