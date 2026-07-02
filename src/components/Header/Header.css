@@ -30,7 +30,7 @@
   display: none;
   position: absolute;
   top: 0.75rem;
-  right: 0.5rem;
+  right: 1rem;
   flex-direction: column;
   justify-content: space-between;
   width: 2.25rem;
@@ -59,10 +59,14 @@
   .nav.open {
     display: flex;
   }
-  .header-container {
-    gap: 1rem;
-  }
   nav {
     background-color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+    /* padding: 0.5rem 0; */
+    /* border: 1px solid var(--primary); */
   }
 }
