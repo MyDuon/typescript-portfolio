@@ -2,6 +2,7 @@ import "./Header.css";
 import { Link } from "react-router";
 import resume from "../../assets/CV.pdf";
 import { useState } from "react";
+import MobileNavbar from "./MobileNavbar";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,18 +10,17 @@ function Header() {
     <>
       <header className="header-container">
         <Link className="home-button" to="/">
-          <p>My Hoang Duong</p>
+          My Hoang Duong
         </Link>
 
         {/* Desktop navbar */}
-        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+        <nav className="nav">
           <a href="/">About</a>
-          {/* <a href="/">Projects</a> */}
           <a href={resume} target="_blank">
             Resume
           </a>
           <Link className="education-button" to="/education">
-            <p>Education</p>
+            Education
           </Link>
         </nav>
 
@@ -28,7 +28,6 @@ function Header() {
         <div
           onClick={() => {
             setMenuOpen(!menuOpen);
-            console.log("menuOpen", menuOpen);
           }}
           className="hamburger-button"
         >
@@ -37,6 +36,9 @@ function Header() {
           <span></span>
         </div>
       </header>
+
+      {/* Mobile navbar */}
+      {menuOpen && <MobileNavbar />}
     </>
   );
 }

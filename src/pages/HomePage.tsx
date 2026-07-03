@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
-// import Experience from "../components/Experience/Experience";
+import Experience from "../components/Experience/Experience";
 import Footer from "../components/Footer/Footer";
 import "../index.css";
 import SideProject from "../components/SideProject/SideProject";
@@ -15,7 +15,7 @@ function HomePage() {
         <Hero />
         <Skills />
         <SideProject />
-        {/* <Experience /> */}
+        <Experience />
         <Footer />
       </div>
     </div>
