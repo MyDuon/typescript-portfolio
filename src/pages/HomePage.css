@@ -1,14 +1,5 @@
 .home-page-container {
   display: flex;
   flex-direction: column;
-}
-
-.home-page-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.home-page-content.with-padding {
-  padding-top: 1rem;
+  gap: 1rem;
 }

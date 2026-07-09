@@ -2,15 +2,13 @@ import "./Header.css";
 import { Link } from "react-router";
 import resume from "../../assets/CV.pdf";
 import MobileNavbar from "./MobileNavbar";
+import { useState } from "react";
 
-interface HeaderProps {
-  menuOpen: boolean;
-  setMenuOpen: (open: boolean) => void;
-}
+function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-function Header({ menuOpen, setMenuOpen }: HeaderProps) {
   return (
-    <>
+    <div className="header-wrapper">
       <header className="header-container">
         <Link className="home-button" to="/">
           My Hoang Duong
@@ -42,7 +40,7 @@ function Header({ menuOpen, setMenuOpen }: HeaderProps) {
 
       {/* Mobile navbar */}
       {menuOpen && <MobileNavbar />}
-    </>
+    </div>
   );
 }
 export default Header;
