@@ -19,3 +19,11 @@
 body {
   background-color: var(--bg-color);
 }
+
+h1 {
+  font-size: clamp(0.5rem, 5vw, 2rem);
+}
+
+h2 {
+  font-size: clamp(0.5rem, 4vw, 1.5rem);
+}

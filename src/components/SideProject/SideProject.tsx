@@ -11,7 +11,7 @@ function SideProject() {
   return (
     <>
       <div className="side-project-container">
-        <h1 className="side-project-header">My Work</h1>
+        <h2 className="side-project-header">My Work</h2>
         <ProjectCard
           imageSrc={thinkboard_gif}
           alt="Think Board App"

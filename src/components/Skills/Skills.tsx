@@ -3,12 +3,12 @@ import "./Skills.css";
 function Skills() {
   return (
     <div className="skills-container">
-      <h1 className="heading">Skills</h1>
+      <h2 className="heading">Skills</h2>
       <div className="skills-content">
         <div className="programming-languages-container">
-          <h2 className="programming-language-heading">
+          <h3 className="programming-language-heading">
             Programming Languages
-          </h2>
+          </h3>
           <div className="programming-languages-content">
             <div className="skill-item">Typescript</div>
             <div className="skill-item">Javascript</div>
@@ -19,7 +19,7 @@ function Skills() {
           </div>
         </div>
         <div className="front-end">
-          <h2 className="front-end-heading">Front-End Frameworks</h2>
+          <h3 className="front-end-heading">Front-End Frameworks</h3>
           <div className="front-end-content">
             <div className="skill-item">React</div>
             <div className="skill-item">HTML</div>
@@ -28,7 +28,7 @@ function Skills() {
           </div>
         </div>
         <div className="back-end">
-          <h2 className="back-end-heading">Back-End Technologies</h2>
+          <h3 className="back-end-heading">Back-End Technologies</h3>
           <div className="back-end-content">
             <div className="skill-item">Node.js</div>
             <div className="skill-item">MongoDB</div>
@@ -36,7 +36,7 @@ function Skills() {
           </div>
         </div>
         <div className="other">
-          <h2 className="other-heading">Other Technologies</h2>
+          <h3 className="other-heading">Other Technologies</h3>
           <div className="other-content">
             <div className="skill-item">Azure</div>
             <div className="skill-item">Git</div>

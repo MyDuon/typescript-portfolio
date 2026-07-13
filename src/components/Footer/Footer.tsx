@@ -7,7 +7,7 @@ function Footer() {
   return (
     <>
       <div className="footer">
-        <h1 className="contact-header">Contact me</h1>
+        <h2 className="contact-header">Contact me</h2>
         <div className="logo-container">
           <div className="linkedin-logo">
             <a href="https://www.linkedin.com/in/my-hoang-duong/">
