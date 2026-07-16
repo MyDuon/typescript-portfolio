@@ -1,6 +1,6 @@
 .hero-container {
   display: flex;
-  gap: 2rem;
+  gap: clamp(0.1rem, 2vw + 0.1rem, 2rem);
   /* padding: 0 8rem; */
   padding: 0 clamp(0.3rem, 5vw + 1.5rem, 8rem);
 }
@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
+  gap: min(1rem, 1vw);
 }
 .hero-intro,
 .hero-description {
@@ -29,13 +29,17 @@
   border-radius: 20%;
 }
 
-@media (max-width: 71rem) {
+h2.hero-description {
+  font-size: clamp(1rem, 1.5vw + 0.4rem, 1.5rem);
+}
+
+@media (max-width: 45rem) {
   .left-hero,
   .right-hero {
     width: auto;
   }
 }
-@media (max-width: 48rem) {
+@media (max-width: 35rem) {
   .hero-container {
     flex-direction: column;
     align-items: center;

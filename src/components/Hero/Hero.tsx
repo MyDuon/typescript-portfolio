@@ -8,12 +8,11 @@ function Hero() {
         <div className="left-hero">
           <h1 className="hero-intro">
             Hei, Jeg er <span className="hero-name">My</span> – Fullstack
-            utvikler og masterstudent innen IT
+            utvikler og masterstudent innen IT (UIO)
           </h1>
           <h2 className="hero-description">
-            Jeg bygger fullstack-løsninger med fokus på både god kodekvalitet og
-            responsiv design. Til daglig studerer jeg informatikk på UIO, og
-            jobber med teknologier som f.eks.{" "}
+            Jeg bygger løsninger med robust kode og responsiv design.
+            Teknologier som jeg jobber med nå er f.eks.{" "}
             <span className="hero-name">React</span>,{" "}
             <span className="hero-name">TypeScript</span>,{" "}
             <span className="hero-name">Node.js</span>, {""}
