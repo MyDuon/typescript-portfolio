@@ -42,6 +42,12 @@
 .project-links a {
   text-decoration: none;
   color: var(--font-color);
-  font-weight: 600;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 1rem;
+}
+.project-links a:hover {
+  background-color: var(--primary);
   transition: all 0.3s ease-in-out;
 }

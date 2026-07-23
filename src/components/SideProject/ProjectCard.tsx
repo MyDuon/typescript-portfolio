@@ -46,7 +46,7 @@ function ProjectCard({
           {/* Internal OR external, depending on the value of `link` */}
           {isExternalLink ? (
             <a href={link} target="_blank" rel="noopener noreferrer">
-              Link
+              Demo
             </a>
           ) : (
             <Link to={link}>Link</Link>
