@@ -49,7 +49,7 @@ function ProjectCard({
               Demo
             </a>
           ) : (
-            <Link to={link}>Link</Link>
+            <Link to={link}>Demo</Link>
           )}
           {/* Github is always external */}
           <a href={github} target="_blank" rel="noopener noreferrer">

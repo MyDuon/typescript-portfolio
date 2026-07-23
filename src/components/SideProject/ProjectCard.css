@@ -52,3 +52,12 @@
   background-color: var(--primary);
   transition: all 0.3s ease-in-out;
 }
+
+@media (max-width: 35rem) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--accent);
+  }
+}
