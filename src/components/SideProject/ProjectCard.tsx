@@ -39,7 +39,7 @@ function ProjectCard({
       </div>
       <div className="project-description">
         <div className="project-info">
-          <h2 className="project-title">{title}</h2>
+          <h3 className="project-title">{title}</h3>
           <h4 className="project-description-text">{description}</h4>
         </div>
         <div className="project-links">
