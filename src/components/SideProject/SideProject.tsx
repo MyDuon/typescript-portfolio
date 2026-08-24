@@ -6,20 +6,13 @@ import todo_gif from "../../assets/todo_list.gif";
 import thinkboard_gif from "../../assets/thinkboard.gif";
 import movieapp_gif from "../../assets/movieapp.gif";
 import stopwatch_mp4 from "../../assets/stopwatch.mp4";
+import raspberry_pi2_gif from "../../assets/raspberry_pi2.gif";
 
 function SideProject() {
   return (
     <>
       <div className="side-project-container">
         <h2 className="side-project-header">My Work</h2>
-        <ProjectCard
-          imageSrc={thinkboard_gif}
-          alt="Think Board App"
-          title="Think Board"
-          description="A full-stack note-taking app built with the MERN stack (MongoDB, Express, React, Node.js) deployed with Render."
-          link="https://mern-thinkboard-l60u.onrender.com/"
-          github="https://github.com/example/thinkboard"
-        />
         <ProjectCard
           imageSrc={todo_gif}
           alt="Todo List App"
@@ -35,6 +28,14 @@ function SideProject() {
           description="A front-end calculator app built with React in TypeScript from scratch."
           link="/calculator"
           github="https://github.com/example/calculator"
+        />
+        <ProjectCard
+          imageSrc={raspberry_pi2_gif}
+          alt="Raspberry Pi Project"
+          title="Retro gaming console"
+          description="A project built with a Raspberry Pi 2 and the software recalbox. 8bit controllers were used to play the games. The Raspberry Pi was connected to a TV via HDMI."
+          link="/raspberry-pi"
+          github="https://github.com/example/raspberry-pi"
         />
         <ProjectCard
           imageSrc={movieapp_gif}
@@ -59,6 +60,14 @@ function SideProject() {
           description="A arduino-based stopwatch device. Built with an LCD display, buttons, and a microcontroller to keep track of time."
           link="/stopwatch"
           github="https://github.com/MyDuon/Arduino-stopwatch"
+        />
+        <ProjectCard
+          imageSrc={thinkboard_gif}
+          alt="Think Board App"
+          title="Think Board"
+          description="A full-stack note-taking app built with the MERN stack (MongoDB, Express, React, Node.js) deployed with Render."
+          link="https://mern-thinkboard-l60u.onrender.com/"
+          github="https://github.com/example/thinkboard"
         />
       </div>
     </>
