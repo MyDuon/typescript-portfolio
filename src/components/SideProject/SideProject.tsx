@@ -34,8 +34,6 @@ function SideProject() {
           alt="Raspberry Pi Project"
           title="Retro gaming console"
           description="A project built with a Raspberry Pi 2 and the software recalbox. 8bit controllers were used to play the games. The Raspberry Pi was connected to a TV via HDMI."
-          demolink="/raspberry-pi"
-          github="https://github.com/MyDuon/raspberry-pi"
         />
         <ProjectCard
           imageSrc={movieapp_gif}
@@ -58,7 +56,6 @@ function SideProject() {
           alt="Stopwatch device"
           title="Stopwatch arduino"
           description="A arduino-based stopwatch device. Built with an LCD display, buttons, and a microcontroller to keep track of time."
-          demolink="/stopwatch"
           github="https://github.com/MyDuon/Arduino-stopwatch"
         />
         <ProjectCard
@@ -66,7 +63,6 @@ function SideProject() {
           alt="Think Board App"
           title="Think Board"
           description="A full-stack note-taking app built with the MERN stack (MongoDB, Express, React, Node.js) deployed with Render."
-          demolink="https://mern-thinkboard-l60u.onrender.com/"
           github="https://github.com/MyDuon/thinkboard"
         />
       </div>
