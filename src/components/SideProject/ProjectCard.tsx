@@ -6,7 +6,7 @@ type ProjectCardProps = {
   alt: string;
   title: string;
   description: string;
-  link: string; // can be internal or external
+  demolink: string; // can be internal or external
   github: string; // external
 };
 
@@ -15,12 +15,12 @@ function ProjectCard({
   alt,
   title,
   description,
-  link,
+  demolink,
   github,
 }: ProjectCardProps) {
-  // Treat link as external if it starts with http:// or https://
+  // Treat demolink as external if it starts with http:// or https://
   const isExternalLink: boolean =
-    link.startsWith("http://") || link.startsWith("https://");
+    demolink.startsWith("http://") || demolink.startsWith("https://");
 
   // true if imageSrc ends with .mp4 (case-insensitive)
   const isVideo = /\.mp4$/i.test(imageSrc);
@@ -43,13 +43,13 @@ function ProjectCard({
           <h4 className="project-description-text">{description}</h4>
         </div>
         <div className="project-links">
-          {/* Internal OR external, depending on the value of `link` */}
+          {/* Internal OR external, depending on the value of `demolink` */}
           {isExternalLink ? (
-            <a href={link} target="_blank" rel="noopener noreferrer">
+            <a href={demolink} target="_blank" rel="noopener noreferrer">
               Demo
             </a>
           ) : (
-            <Link to={link}>Demo</Link>
+            <Link to={demolink}>Demo</Link>
           )}
           {/* Github is always external */}
           <a href={github} target="_blank" rel="noopener noreferrer">

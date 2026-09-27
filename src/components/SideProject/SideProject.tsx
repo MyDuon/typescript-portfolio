@@ -18,47 +18,47 @@ function SideProject() {
           alt="Todo List App"
           title="Todo List"
           description="A front-end todo list built with React in TypeScript. Uses local storage to save the user's tasks."
-          link="/todolist"
-          github="https://github.com/example/todo"
+          demolink="/todolist"
+          github="https://github.com/MyDuon/typescript-portfolio/tree/main/src/pages"
         />
         <ProjectCard
           imageSrc={calculator_gif}
           alt="Calculator App"
           title="Calculator"
           description="A front-end calculator app built with React in TypeScript from scratch."
-          link="/calculator"
-          github="https://github.com/example/calculator"
+          demolink="/calculator"
+          github="https://github.com/MyDuon/typescript-portfolio/tree/main/src/pages"
         />
         <ProjectCard
           imageSrc={raspberry_pi2_gif}
           alt="Raspberry Pi Project"
           title="Retro gaming console"
           description="A project built with a Raspberry Pi 2 and the software recalbox. 8bit controllers were used to play the games. The Raspberry Pi was connected to a TV via HDMI."
-          link="/raspberry-pi"
-          github="https://github.com/example/raspberry-pi"
+          demolink="/raspberry-pi"
+          github="https://github.com/MyDuon/raspberry-pi"
         />
         <ProjectCard
           imageSrc={movieapp_gif}
           alt="Movie App"
           title="Movie App"
           description="A front-end movie browsing app built with React in TypeScript. Fetches data from the TMDB API and displays popular movies."
-          link="/streaming"
-          github="https://github.com/example/streaming"
+          demolink="/streaming"
+          github="https://github.com/MyDuon/typescript-portfolio/tree/main/src/pages"
         />
         <ProjectCard
           imageSrc={tictactoe_gif}
           alt="Tic Tac Toe App"
           title="Tic Tac Toe"
           description="A front-end Tic Tac Toe game built with React in TypeScript. Followed a tutorial from the official React documentation."
-          link="/tictactoe"
-          github="https://github.com/example/tictactoe"
+          demolink="/tictactoe"
+          github="https://github.com/MyDuon/typescript-portfolio/tree/main/src/pages"
         />
         <ProjectCard
           imageSrc={stopwatch_mp4}
           alt="Stopwatch device"
           title="Stopwatch arduino"
           description="A arduino-based stopwatch device. Built with an LCD display, buttons, and a microcontroller to keep track of time."
-          link="/stopwatch"
+          demolink="/stopwatch"
           github="https://github.com/MyDuon/Arduino-stopwatch"
         />
         <ProjectCard
@@ -66,8 +66,8 @@ function SideProject() {
           alt="Think Board App"
           title="Think Board"
           description="A full-stack note-taking app built with the MERN stack (MongoDB, Express, React, Node.js) deployed with Render."
-          link="https://mern-thinkboard-l60u.onrender.com/"
-          github="https://github.com/example/thinkboard"
+          demolink="https://mern-thinkboard-l60u.onrender.com/"
+          github="https://github.com/MyDuon/thinkboard"
         />
       </div>
     </>
